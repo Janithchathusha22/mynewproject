@@ -91,15 +91,16 @@ themeButton.addEventListener('click', () => {
 function toggleService(number) {
     var description = document.getElementById("description" + number);
     var toggleIcon = document.getElementById("toggle" + number);
-    var toggleTitle = document.querySelector(".toggle-title");
+    var toggleTitle = document.getElementById("toggleTitle" + number); // Selecting the specific toggle title
    
     if (description.classList.contains("hidden")) {
       description.classList.remove("hidden");
       toggleIcon.textContent = "-";
-      toggleTitle.style.color = "#6A44F2";
+      toggleTitle.style.color = "#6A44F2"; // Change title color when open
     } else {
       description.classList.add("hidden");
       toggleIcon.textContent = "+";
-      toggleTitle.style.color = "black";
+      toggleTitle.style.color = "black"; // Change title color when closed
     }
   }
+ 
