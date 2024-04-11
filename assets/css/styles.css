@@ -361,16 +361,16 @@ img {
   justify-content: space-evenly;
 }
 
-.footer__content {
+/* .footer__content {
   flex: 0 0 60%; /* Each section takes up 33.33% of the container width */
-  padding: 20px; /* Adjust padding as needed */
-  box-sizing: border-box; /* Ensure padding and border are included in the total width */
-}
+  /* padding: 20px; /* Adjust padding as needed */
+  /* box-sizing: border-box; Ensure padding and border are included in the total width */ */
+/* }
 .footer__contents {
   flex: 0 0 20%; /* Each section takes up 33.33% of the container width */
-  padding: 20px; /* Adjust padding as needed */
-  box-sizing: border-box; /* Ensure padding and border are included in the total width */
-}
+  /* padding: 20px; /* Adjust padding as needed */
+  /* box-sizing: border-box; Ensure padding and border are included in the total width */
+/* } */ */ */ */
 
 .footer__logo, .footer__title {
   font-size: var(--h3-font-size);
@@ -580,4 +580,12 @@ img {
   .scrollup {
     right: 2rem;
   }
+}
+/* For Toggle */
+.hidden {
+  display: none;
+}
+.toggle-icon {
+  float: right;
+  cursor: pointer;
 }

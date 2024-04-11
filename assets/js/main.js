@@ -88,3 +88,18 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+function toggleService(number) {
+    var description = document.getElementById("description" + number);
+    var toggleIcon = document.getElementById("toggle" + number);
+    var toggleTitle = document.querySelector(".toggle-title");
+   
+    if (description.classList.contains("hidden")) {
+      description.classList.remove("hidden");
+      toggleIcon.textContent = "-";
+      toggleTitle.style.color = "#6A44F2";
+    } else {
+      description.classList.add("hidden");
+      toggleIcon.textContent = "+";
+      toggleTitle.style.color = "black";
+    }
+  }
