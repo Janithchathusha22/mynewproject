@@ -463,6 +463,15 @@ img {
   .app__buttons {
     grid-template-columns: max-content;
   }
+  .nav__link {
+    color: black;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .nav__link {
+      color: black;
+  }
 }
 
 /* For medium devices */
